@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>Baking with the Gemini API</title>
+</head>
+
+<body>
+  <main>
+    <h1>AI Health Companion</h1>
+    
+    <div id="chartContainer">
+      <canvas id="myChart"></canvas>
+    </div>
+    <div class="ishealthy" id="health"><p>Healthy</p></div>
+    <p class="output"></p>
+    <form id="initialForm">
+      <div class="image-picker">
+        <input type="file" id="fileInput1" name="file1">
+        <p class="image-picker-text">Upload Front of Product</p>
+        <input type="file" id="fileInput2" name="file2">
+        <p class="image-picker-text">Upload Back of Product</p>
+      </div>
+      <div class="prompt-box">
+        <button type="submit">Go</button><p id="generatingloader">Generating ...</p>
+      </div>
+    </form>
+    
+    <div class="followup-container">
+      <input id="followupInput" placeholder="Ask a follow-up question" type="text">
+      <button id="followupButton">Send</button>
+    </div>
+    <div class="followup-output-container">
+      <button class="close-button">&#8628;</button>
+      <p class="followup-output">(Follow-up results will appear here)</p>
+    </div>
+    
+  </main>
+
+  <script type="module" src="/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+
+</html>
