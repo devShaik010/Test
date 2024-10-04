@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/react"
 import { GoogleGenerativeAI, HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
 import Base64 from 'base64-js';
 import MarkdownIt from 'markdown-it';
@@ -12,7 +11,7 @@ Chart.register(DoughnutController, ArcElement, Tooltip, Legend);
 let userdata = localStorage.getItem('profile');
 console.log(userdata);
 // userdata = decodedResponse.replace(/"/g, " ");
-<Analytics />
+
 
 // 🔥🔥 FILL THIS OUT FIRST! 🔥🔥
 // Get your Gemini API key by:
